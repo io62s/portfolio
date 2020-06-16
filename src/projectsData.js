@@ -1,6 +1,5 @@
 /*********************WORK IMGS **********************/
 import erebusUrl from "./assets/work/erebus.jpg";
-import uiPaletteUrl from "./assets/work/palettes.jpg";
 import nbgUrl from "./assets/work/nbg.jpg";
 import cityNestUrl from "./assets/work/cityNest.jpg";
 import contactBookUrl from "./assets/work/contactBook.jpg";
@@ -23,12 +22,6 @@ import erbBig from "./assets/projects/erb.png";
 import erbGroup from "./assets/projects/erbGroup.png";
 import erbMob from "./assets/projects/erbMob.png";
 /***************************************************/
-/********************* UI PALETTES **********************/
-import pltsImac from "./assets/projects/pltsImac.png";
-import pltsBig from "./assets/projects/plts.png";
-import pltsGroup from "./assets/projects/pltsGroup.png";
-import pltsMob from "./assets/projects/pltsMob.png";
-/***************************************************/
 /********************* CONTACT BOOK **********************/
 import contactsImac from "./assets/projects/contactsImac.png";
 import contactsBig from "./assets/projects/contacts.png";
@@ -38,39 +31,41 @@ import contactsMob from "./assets/projects/contactsMob.png";
 
 /*******************OTHER PROJECTS************************/
 import erebusSmall from "./assets/projects/erebusSmall.jpg";
-import palettesSmall from "./assets/projects/palettesSmall.jpg";
 import nbgSmall from "./assets/projects/nbgSmall.jpg";
 import cityNestSmall from "./assets/projects/cityNestSmall.jpg";
+import contactsSmall from "./assets/projects/contactsSmall.jpg";
 /*********************************************************/
 
 export default [
   {
     id: 1,
-    name: "nbg",
-    title: "NBG",
-    imgUrl: nbgUrl,
+    name: "contacts",
+    title: "Contact Book",
+    imgUrl: contactBookUrl,
+    code: "https://github.com/io62s/contact-book",
     projectDetails: {
-      aboutClient:
-        "NBG is an Serbian punk rock band from Belgrade,  formed in 1984.",
+      aboutClient: "Contact keeping app",
       aboutProject:
-        "NBG, a popular punk rock band offered me the opportunity to design their personal website for professional advantages. The design was completed by utilizing Photoshop and Figma. Web technologies used: Html, Css and JavaScript.",
-      clientUrl: "http://www.nbgpunk.com/",
-      iMac: nbgImac,
-      big: nbgBig,
-      group: nbgGroup,
-      mob: nbgMob,
+        "A personal project, an MERN stack app for keeping contacts. Create, edit, delete contacts, sort by type, name...Web Technologies used: FrontEnd - Html, Css, JavaScript, ReactJs. BackEnd - NodeJs, Express, MongoDB",
+      clientUrl: "https://contact-book-app-mern.herokuapp.com/",
+      iMac: contactsImac,
+      big: contactsBig,
+      group: contactsGroup,
+      mob: contactsMob,
       other: [
         { name: "city-nest", smallUrl: cityNestSmall },
         { name: "erebus", smallUrl: erebusSmall },
-        { name: "ui-palettes", smallUrl: palettesSmall },
+        { name: "nbg", smallUrl: nbgSmall },
       ],
     },
   },
+
   {
     id: 2,
     name: "city-nest",
     title: "City Nest",
     imgUrl: cityNestUrl,
+    code: "",
     projectDetails: {
       aboutClient:
         "City Nest was created as a response to needs of a modern tourist and new trends in hotel management.",
@@ -82,9 +77,9 @@ export default [
       group: nestGroup,
       mob: nestMob,
       other: [
-        { name: "nbg", smallUrl: nbgSmall },
+        { name: "contacts", smallUrl: contactsSmall },
         { name: "erebus", smallUrl: erebusSmall },
-        { name: "ui-palettes", smallUrl: palettesSmall },
+        { name: "nbg", smallUrl: nbgSmall },
       ],
     },
   },
@@ -93,6 +88,7 @@ export default [
     name: "erebus",
     title: "Erebus",
     imgUrl: erebusUrl,
+    code: "https://github.com/io62s/maat",
     projectDetails: {
       aboutClient:
         "Erebus is a lifestyle brand based in Belgrade. The company primarily produces clothing for young men and women.",
@@ -104,29 +100,31 @@ export default [
       group: erbGroup,
       mob: erbMob,
       other: [
-        { name: "nbg", smallUrl: nbgSmall },
         { name: "city-nest", smallUrl: cityNestSmall },
-        { name: "ui-palettes", smallUrl: palettesSmall },
+        { name: "contacts", smallUrl: contactsSmall },
+        { name: "nbg", smallUrl: nbgSmall },
       ],
     },
   },
   {
     id: 4,
-    name: "ui-palettes",
-    title: "Ui Palettes",
-    imgUrl: uiPaletteUrl,
+    name: "nbg",
+    title: "NBG",
+    imgUrl: nbgUrl,
+    code: "",
     projectDetails: {
-      aboutClient: "Create custom color palettes for UI / Web design.",
+      aboutClient:
+        "NBG is an Serbian punk rock band from Belgrade,  formed in 1984.",
       aboutProject:
-        "A personal project, an app for creating custom color palettes for designers. Addition to that you can create custom colors and copy color codes as hex, rgb or rgba. Web Technologies used: Html, Css, Sass, JavaScript, ReactJs.",
-      clientUrl: "https://ui-palettes.netlify.com/",
-      iMac: pltsImac,
-      big: pltsBig,
-      group: pltsGroup,
-      mob: pltsMob,
+        "NBG, a popular punk rock band offered me the opportunity to design their personal website for professional advantages. The design was completed by utilizing Photoshop and Figma. Web technologies used: Html, Css and JavaScript.",
+      clientUrl: "#",
+      iMac: nbgImac,
+      big: nbgBig,
+      group: nbgGroup,
+      mob: nbgMob,
       other: [
-        { name: "nbg", smallUrl: nbgSmall },
         { name: "city-nest", smallUrl: cityNestSmall },
+        { name: "contacts", smallUrl: contactsSmall },
         { name: "erebus", smallUrl: erebusSmall },
       ],
     },

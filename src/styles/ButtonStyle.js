@@ -5,8 +5,9 @@ import { transition } from "./common";
 
 const ButtonStyle = styled(animated.button)`
   position: relative;
-  width: 18rem;
+  width: ${(props) => (props.github ? "10rem" : "18rem")};
   height: 5.5rem;
+  margin: ${(props) => (props.github ? "0 0 0 .5rem" : "0")};
   background-color: transparent;
   outline: none;
   border: 1px solid ${mainColor};
@@ -20,7 +21,7 @@ const ButtonStyle = styled(animated.button)`
     font-size: 2rem;
     position: relative;
     z-index: 10;
-    color: ${props => (props.secondary ? mainColor : "white")};
+    color: ${(props) => (props.secondary ? mainColor : "white")};
     font-family: "Raleway", sans-serif;
     font-weight: 600;
     text-transform: capitalize;
@@ -36,7 +37,7 @@ const ButtonStyle = styled(animated.button)`
     left: 0;
     right: 0;
     width: 100%;
-    height: ${props => (props.secondary ? "0%" : "100%")};
+    height: ${(props) => (props.secondary ? "0%" : "100%")};
     border: none;
     ${transition(0.3)};
   }
@@ -44,18 +45,19 @@ const ButtonStyle = styled(animated.button)`
   &:hover .btn-text,
   &:focus .btn-text,
   &:active .btn-text {
-    color: ${props => (props.secondary ? "white" : mainColor)};
+    color: ${(props) => (props.secondary ? "white" : mainColor)};
   }
 
   &:hover::after,
   &:focus::after,
   &:active::after {
-    height: ${props => (props.secondary ? "100%" : "0%")};
+    height: ${(props) => (props.secondary ? "100%" : "0%")};
   }
 
   /****************************************** */
   @media screen and (max-width: 500px) {
-    width: 15rem;
+    width: ${(props) => (props.github ? "10rem" : "15rem")};
+
     height: 4.5rem;
 
     .btn-text {
@@ -64,7 +66,7 @@ const ButtonStyle = styled(animated.button)`
   }
 
   @media screen and (max-width: 340px) {
-    width: 12rem;
+    width: ${(props) => (props.github ? "10rem" : "12rem")};
   }
   /****************************************** */
 `;

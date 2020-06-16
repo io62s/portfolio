@@ -3,7 +3,7 @@ import { mainColor, darkGrey } from "./Colors";
 import { flex, transition } from "./common";
 
 const Logo = styled.img`
-  width: 3.5rem;
+  width: 3rem;
 `;
 
 const FooterContainer = styled.div`

@@ -9,28 +9,29 @@ import {
   Gallery,
   OtherProjectsContainer,
   Text,
-  Imac
+  Imac,
 } from "../styles/ProjectDetailsStyles";
 
 const ProjectDetails = ({ projects }) => {
   const { name } = useParams();
 
-  const project = projects.find(p => p.name === name);
+  const project = projects.find((p) => p.name === name);
 
   const textSpring = useSpring({
     config: { mass: 1, tension: 30, friction: 15 },
     from: { transform: "translateX(-20%)", opacity: 0 },
     to: { transform: "translateX(0%)", opacity: 1 },
-    delay: 400
+    delay: 400,
   });
   const imacSpring = useSpring({
     config: { mass: 2, tension: 30, friction: 15 },
     from: { transform: "translateX(30%)", opacity: 0 },
     to: { transform: "translateX(0%)", opacity: 1 },
-    delay: 1200
+    delay: 1200,
   });
   const {
     title,
+    code,
     projectDetails: {
       aboutClient,
       aboutProject,
@@ -39,9 +40,17 @@ const ProjectDetails = ({ projects }) => {
       big,
       group,
       mob,
-      other
-    }
+      other,
+    },
   } = project;
+
+  const githubBtn = code ? (
+    <a href={code} target="_blank" rel="noopener noreferrer">
+      <Button secondary="true" github>
+        <h5 className="btn-text">Code</h5>
+      </Button>
+    </a>
+  ) : null;
 
   return (
     <div style={{ overflow: "hidden" }}>
@@ -68,10 +77,11 @@ const ProjectDetails = ({ projects }) => {
               <h5 className="btn-text">visit website</h5>
             </Button>
           </a>
+          {githubBtn}
         </Text>
         <Imac style={imacSpring} src={iMac} alt={title} />
       </AboutProject>
-      <VisibilitySensor partialVisibility offset={{ bottom: 300 }}>
+      <VisibilitySensor partialVisibility offset={{ bottom: 200 }}>
         {({ isVisible }) => (
           <Gallery>
             <img
