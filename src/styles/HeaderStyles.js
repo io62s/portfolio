@@ -9,7 +9,7 @@ const NavHeader = styled.header`
   margin-bottom: 4rem;
 
   .logo {
-    width: 4.6rem;
+    width: 4.2rem;
     fill: ${mainColor};
     ${transition(0.2)}
 
