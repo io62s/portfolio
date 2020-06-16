@@ -51,7 +51,7 @@ const Hello = styled(animated.p)`
   font-weight: 600;
 
   @media screen and (max-width: 400px) {
-    font-size: 3.8rem;
+    font-size: 3rem;
   }
 `;
 const AboutMe = styled(animated.p)`
@@ -62,6 +62,13 @@ const AboutMe = styled(animated.p)`
     font-size: 3.6rem;
     font-weight: 600;
     color: ${mainColor};
+  }
+
+  @media screen and (max-width: 400px) {
+    font-size: 3rem;
+    span {
+      font-size: 3rem;
+    }
   }
 `;
 

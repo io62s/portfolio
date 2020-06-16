@@ -17,6 +17,7 @@ const AboutProject = styled.div`
 
   @media screen and (max-width: 500px) {
     grid-template-columns: 1fr;
+    margin: 1rem auto;
   }
 `;
 

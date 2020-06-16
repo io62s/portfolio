@@ -56,9 +56,9 @@ const ButtonStyle = styled(animated.button)`
 
   /****************************************** */
   @media screen and (max-width: 500px) {
-    width: ${(props) => (props.github ? "10rem" : "15rem")};
+    width: ${(props) => (props.github ? "10rem" : "13rem")};
 
-    height: 4.5rem;
+    height: 4.1rem;
 
     .btn-text {
       font-size: 1.4rem;

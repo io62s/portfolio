@@ -17,7 +17,7 @@ const NavHeader = styled.header`
       fill: ${black};
     }
     @media screen and (max-width: 400px) {
-      width: 4rem;
+      width: 3.2rem;
     }
   }
 `;
