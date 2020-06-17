@@ -12,7 +12,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    font-family: 'Source Sans Pro', sans-serif
+    font-family: 'Open Sans', sans-serif;
     background-color: ${lightGrey};
   }
 `;
