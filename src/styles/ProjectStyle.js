@@ -53,7 +53,7 @@ const ProjectContainter = styled.div`
     padding: 1rem;
     .details {
       margin-top: 0;
-      padding: 1rem 2rem 0;
+      padding: 1rem 1rem 0;
       transform: translateY(-100%);
       h3 {
         font-size: 1.8rem;
