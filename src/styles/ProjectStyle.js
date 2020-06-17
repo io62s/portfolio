@@ -35,7 +35,7 @@ const ProjectContainter = styled.div`
 
     h3 {
       font-weight: 700;
-      color: ${black};
+      color: ${mainColor};
       font-size: 2rem;
       text-transform: uppercase;
     }
