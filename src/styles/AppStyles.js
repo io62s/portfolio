@@ -3,7 +3,7 @@ import { lightGrey } from "./Colors";
 
 const AppContainer = styled.div`
   width: 100%;
-  border: 40px solid #fff;
+  border: 30px solid #fff;
   margin: 0 auto;
 
   @media screen and (max-width: 800px) {
@@ -16,7 +16,7 @@ const AppContainer = styled.div`
 
 const Container = styled.div`
   max-width: 1920px;
-  min-height: 100vh;
+  min-height: calc(100vh - 60px);
   position: relative;
   margin: 0 auto;
   padding: 4rem 6rem 20rem;

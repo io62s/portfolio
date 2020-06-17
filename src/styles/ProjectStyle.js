@@ -43,7 +43,7 @@ const ProjectContainter = styled.div`
 
   &:hover,
   &:focus {
-    border: 2px solid ${mainColor}70;
+    border: 2px solid ${mainColor}90;
     .details {
       transform: translateY(-100%);
     }
