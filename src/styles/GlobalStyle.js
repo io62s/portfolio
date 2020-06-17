@@ -12,7 +12,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif
     background-color: ${lightGrey};
   }
 `;
