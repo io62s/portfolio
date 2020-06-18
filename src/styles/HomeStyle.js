@@ -4,7 +4,7 @@ import { mainColor, black } from "./Colors";
 
 const Header = styled(animated.div)`
   width: 90%;
-  margin: 20rem auto 25rem 8vw;
+  margin: 15rem auto 25rem 8vw;
   text-align: left;
   font-weight: 300;
   line-height: 1.2;
