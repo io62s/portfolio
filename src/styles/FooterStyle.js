@@ -64,11 +64,10 @@ const FlexContainer = styled.div`
   }
 
   .social {
-    width: 30rem;
+    width: 20rem;
     ${flex("row", "space-between")}
     a {
       color: ${darkGrey};
-      font-size: 1.5rem;
 
       text-decoration: none;
       text-transform: uppercase;
@@ -77,6 +76,9 @@ const FlexContainer = styled.div`
       &:hover, &:focus {
         color: ${mainColor};
       }
+    }
+    .social-icon {
+      font-size: 3rem;
     }
   }
 
@@ -102,6 +104,9 @@ const FlexContainer = styled.div`
   @media screen and (max-width: 500px) {
     .social {
       width: 25rem;
+      .social-icon {
+        font-size: 2.5rem;
+      }
     }
     .social a,
     .links .link {

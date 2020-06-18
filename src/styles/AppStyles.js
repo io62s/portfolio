@@ -25,6 +25,9 @@ const Container = styled.div`
   @media screen and (max-width: 900px) {
     padding: 2rem;
   }
+  @media screen and (max-width: 340px) {
+    padding: 1rem;
+  }
 `;
 
 export { Container, AppContainer };

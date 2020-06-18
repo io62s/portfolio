@@ -2,7 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Logo, FooterContainer, FlexContainer } from "../styles/FooterStyle";
 import logo from "../assets/logoSmall.svg";
-
+import { FaDribbble, FaLinkedinIn } from "react-icons/fa";
+import { FiGithub } from "react-icons/fi";
 function Footer() {
   return (
     <FooterContainer>
@@ -29,7 +30,7 @@ function Footer() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            github
+            <FiGithub className="social-icon" />
           </a>
 
           <a
@@ -37,14 +38,14 @@ function Footer() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            dribbble
+            <FaDribbble className="social-icon" />
           </a>
           <a
             href="https://www.linkedin.com/in/bvlajsovic/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            linkedin
+            <FaLinkedinIn className="social-icon" />
           </a>
         </div>
       </FlexContainer>
