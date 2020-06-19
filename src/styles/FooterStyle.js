@@ -64,17 +64,35 @@ const FlexContainer = styled.div`
   }
 
   .social {
-    width: 20rem;
+    width: 25rem;
     ${flex("row", "space-between")}
     a {
       color: ${darkGrey};
-
+      position: relative;
       text-decoration: none;
       text-transform: uppercase;
       ${transition(0.2)}
-
-      &:hover, &:focus {
+      ${flex("column", "center")}
+      
+      span {
+        position: absolute;
+        bottom: -30%;
+        margin-top: 0.5rem;
+        transform: scale(0.2);
+        font-size: 1.2rem;
+        opacity: 0;
+        pointer-events: none;
+        ${transition(0.2)}
+      }
+      &:hover,
+      &:focus {
         color: ${mainColor};
+      }
+
+      &:hover span {
+        transform: scale(1);
+        bottom: -70%;
+        opacity: 1;
       }
     }
     .social-icon {

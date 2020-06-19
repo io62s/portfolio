@@ -30,7 +30,7 @@ function Footer() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FiGithub className="social-icon" />
+            <FiGithub className="social-icon" /> <span>Github</span>
           </a>
 
           <a
@@ -38,14 +38,14 @@ function Footer() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaDribbble className="social-icon" />
+            <FaDribbble className="social-icon" /> <span>Dribbble</span>
           </a>
           <a
             href="https://www.linkedin.com/in/bvlajsovic/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaLinkedinIn className="social-icon" />
+            <FaLinkedinIn className="social-icon" /> <span>LinkedIn</span>
           </a>
         </div>
       </FlexContainer>
