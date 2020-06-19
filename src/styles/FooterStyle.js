@@ -80,6 +80,7 @@ const FlexContainer = styled.div`
         margin-top: 0.5rem;
         transform: scale(0.2);
         font-size: 1.2rem;
+        font-weight: 600;
         opacity: 0;
         pointer-events: none;
         ${transition(0.2)}
