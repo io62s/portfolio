@@ -3,7 +3,7 @@ import { mainColor } from "./Colors";
 import { transition, flex } from "./common";
 
 const ProjectContainter = styled.div`
-  padding: 2rem;
+  padding: 1.2rem;
   background: white;
   position: relative;
   border: 2px solid #fff;
@@ -28,7 +28,7 @@ const ProjectContainter = styled.div`
     left: 0;
     right: 0;
     z-index: 10;
-    padding: 2rem 2rem 0;
+    padding: 1.2rem 1.2rem 0;
     background: white;
     transform: translateY(100%);
     ${transition(0.3)}
