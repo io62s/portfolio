@@ -30,7 +30,7 @@ const Home = ({ projects }) => {
       <Header>
         <Hello style={helloSpring}>Hello,</Hello>
         <AboutMe style={aboutSpring}>
-          My name is <span>Branko.</span>
+          my name is <span>Branko.</span>
           <br /> I'm a <span>Designer / Front-end Developer</span>
           <br /> based in Belgrade, Serbia.
         </AboutMe>
