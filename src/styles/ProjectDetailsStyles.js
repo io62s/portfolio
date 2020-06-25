@@ -12,7 +12,7 @@ const AboutProject = styled.div`
   -webkit-box-pack: space-evenly;
   -ms-flex-pack: space-evenly;
   justify-content: space-evenly;
-  margin: 8rem auto 1rem;
+  margin: 5rem auto 1rem;
   color: ${black};
 
   @media screen and (max-width: 500px) {
@@ -30,7 +30,7 @@ const Text = styled(animated.div)`
   color: ${black};
 
   h2 {
-    font-size: 4rem;
+    font-size: 3.3rem;
     font-weight: 700;
     text-transform: uppercase;
     color: ${mainColor};
