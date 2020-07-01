@@ -19,7 +19,7 @@ const Container = styled.div`
   min-height: calc(100vh - 60px);
   position: relative;
   margin: 0 auto;
-  padding: 4rem 6rem 20rem;
+  padding: 4rem 4rem 20rem;
   background: ${lightGrey};
 
   @media screen and (max-width: 900px) {
