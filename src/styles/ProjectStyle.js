@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { mainColor, black } from "./Colors";
+import { mainColor } from "./Colors";
 import { transition, flex } from "./common";
 
 const ProjectContainter = styled.div`
