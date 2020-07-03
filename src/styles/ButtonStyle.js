@@ -22,7 +22,7 @@ const ButtonStyle = styled(animated.button)`
     position: relative;
     z-index: 10;
     color: ${(props) => (props.secondary ? mainColor : "white")};
-    font-family: "Raleway", sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-weight: 600;
     text-transform: capitalize;
     ${transition(0.3)}

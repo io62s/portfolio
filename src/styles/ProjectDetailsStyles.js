@@ -156,8 +156,10 @@ const OtherProjectsContainer = styled.div`
       top: 0;
       left: 0;
       background: #fff;
-      -webkit-box-shadow: 0 2px 10px 0 rgba(134, 141, 155, 0.2);
-      box-shadow: 0 2px 10px 0 rgba(134, 141, 155, 0.2);
+      -webkit-box-shadow: 0 2px 6px rgba(134, 141, 155, 0.25),
+        0 10px 20px rgba(134, 141, 155, 0.2);
+      box-shadow: 0 2px 6px rgba(134, 141, 155, 0.25),
+        0 10px 20px rgba(134, 141, 155, 0.2);
       ${transition(0.6)}
     }
 

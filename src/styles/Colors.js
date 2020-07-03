@@ -1,4 +1,3 @@
-// const mainColor = "#24A8CC";
 const mainColor = "#0477BF";
 const lightGrey = "#F5F5F5";
 const darkGrey = "#808080";

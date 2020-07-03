@@ -3,10 +3,11 @@ import { withRouter } from "react-router";
 import { Spring, config } from "react-spring/renderprops";
 import Button from "./Button";
 import { ContactContainer, FormWrapper } from "../styles/ContactStyle";
+import mail from "../assets/mail.png";
 
-const encode = data => {
+const encode = (data) => {
   return Object.keys(data)
-    .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+    .map((key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
     .join("&");
 };
 
@@ -14,20 +15,20 @@ class Contact extends Component {
   state = {
     name: "",
     email: "",
-    message: ""
+    message: "",
   };
 
-  handleSubmit = e => {
+  handleSubmit = (e) => {
     const emailValidationRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
     if (emailValidationRegex.test(this.state.email)) {
       fetch("/", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: encode({ "form-name": "contact", ...this.state })
+        body: encode({ "form-name": "contact", ...this.state }),
       })
         .then(() => alert("Message Sent!"))
-        .catch(error => alert(error));
+        .catch((error) => alert(error));
 
       setTimeout(() => {
         this.props.history.push("/");
@@ -39,7 +40,7 @@ class Contact extends Component {
     e.preventDefault();
   };
 
-  handleChange = e => this.setState({ [e.target.name]: e.target.value });
+  handleChange = (e) => this.setState({ [e.target.name]: e.target.value });
 
   render() {
     const { name, email, message } = this.state;
@@ -51,7 +52,7 @@ class Contact extends Component {
         to={{ opacity: 1 }}
         delay={200}
       >
-        {props => (
+        {(props) => (
           <ContactContainer style={props}>
             <h3>Let's Talk</h3>
             <FormWrapper>
@@ -99,6 +100,18 @@ class Contact extends Component {
                 </Button>
               </form>
             </FormWrapper>
+            <Spring
+              config={{ mass: 1, tension: 50, friction: 13 }}
+              from={{ transform: "translateX(10%)", opacity: 0 }}
+              to={{ transform: "translateX(0%)", opacity: 1 }}
+              delay={700}
+            >
+              {(props) => (
+                <div className="mailbox" style={props}>
+                  <img src={mail} alt="mailbox" />
+                </div>
+              )}
+            </Spring>
           </ContactContainer>
         )}
       </Spring>

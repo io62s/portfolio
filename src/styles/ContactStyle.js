@@ -4,6 +4,7 @@ import { black, mainColor, darkGrey } from "./Colors";
 import { flex, transition } from "./common";
 
 const ContactContainer = styled(animated.div)`
+  position: relative;
   width: 100%;
   min-height: 65vh;
   padding: 4rem 0 8rem;
@@ -14,6 +15,22 @@ const ContactContainer = styled(animated.div)`
     color: ${black};
     margin-bottom: 8rem;
   }
+
+  .mailbox {
+    position: absolute;
+    ${flex("row", "flex-end")}
+    right: 0;
+    bottom: -7.2rem;
+    z-index: 0;
+    img {
+      max-width: 100%;
+    }
+  }
+  @media screen and (max-width: 1050px) {
+    .mailbox {
+      display: none;
+    }
+  }
 `;
 
 const FormWrapper = styled.div`
@@ -22,6 +39,8 @@ const FormWrapper = styled.div`
 
   .form {
     width: 100%;
+    position: relative;
+    z-index: 1;
     ${flex("column", "center")}
 
     .input-field {

@@ -7,8 +7,10 @@ const ProjectContainter = styled.div`
   background: white;
   position: relative;
   border: 2px solid #fff;
-  -webkit-box-shadow: 0 6px 12px 0 ${black}10;
-  box-shadow: 0 6px 12px 0 ${black}13;
+  -webkit-box-shadow: 0 2px 6px rgba(134, 141, 155, 0.25),
+    0 10px 20px rgba(134, 141, 155, 0.2);
+  box-shadow: 0 2px 6px rgba(134, 141, 155, 0.25),
+    0 10px 20px rgba(134, 141, 155, 0.2);
   border-radius: 3px;
   overflow: hidden;
   ${transition(0.3)}
