@@ -13,8 +13,8 @@ const Header = styled(animated.div)`
   -ms-flex-pack: space-around;
   justify-content: space-around;
   align-items: center;
-  max-width: 1400px;
-  margin: 9rem auto 15rem;
+  max-width: 1500px;
+  margin: 4rem auto 15rem;
   text-align: left;
   font-weight: 300;
   line-height: 1.2;
@@ -34,6 +34,7 @@ const Header = styled(animated.div)`
   }
   @media screen and (max-width: 500px) {
     grid-template-columns: 1fr;
+    margin: 7rem auto 10rem;
   }
   /************************************* */
 `;
