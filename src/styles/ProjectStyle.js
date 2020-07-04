@@ -6,7 +6,6 @@ const ProjectContainter = styled.div`
   padding: 1.2rem;
   background: white;
   position: relative;
-  border: 2px solid #fff;
   -webkit-box-shadow: 0 2px 6px rgba(134, 141, 155, 0.25),
     0 10px 20px rgba(134, 141, 155, 0.2);
   box-shadow: 0 2px 6px rgba(134, 141, 155, 0.25),
@@ -45,7 +44,6 @@ const ProjectContainter = styled.div`
 
   &:hover,
   &:focus {
-    border: 2px solid ${mainColor}90;
     .details {
       transform: translateY(-100%);
     }
