@@ -99,6 +99,7 @@ const Gallery = styled.div`
     -ms-grid-column-align: center;
     justify-self: center;
     opacity: 0;
+    padding: 2rem 0;
     ${transition(0.9, 0.2)}
   }
 

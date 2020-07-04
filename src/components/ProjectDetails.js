@@ -46,7 +46,7 @@ const ProjectDetails = ({ projects }) => {
 
   const githubBtn = code ? (
     <a href={code} target="_blank" rel="noopener noreferrer">
-      <Button secondary="true" github>
+      <Button secondary="true" github="true">
         <h5 className="btn-text">Code</h5>
       </Button>
     </a>
