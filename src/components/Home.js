@@ -3,7 +3,14 @@ import { useSpring, config } from "react-spring";
 import { Link } from "react-router-dom";
 import Button from "./Button";
 import Projects from "./Projects";
-import { Header, Wrapper, Hello, AboutMe, Dev } from "../styles/HomeStyle";
+import {
+  Header,
+  Wrapper,
+  Hello,
+  AboutMe,
+  Dev,
+  ProjectsSection,
+} from "../styles/HomeStyle";
 
 import dev from "../assets/dev.png";
 
@@ -33,6 +40,13 @@ const Home = ({ projects }) => {
     delay: 2000,
   });
 
+  const projectsSpring = useSpring({
+    config: { mass: 1, tension: 50, friction: 18 },
+    opacity: 1,
+    from: { opacity: 0 },
+    delay: 400,
+  });
+
   return (
     <Wrapper>
       <Header>
@@ -53,10 +67,10 @@ const Home = ({ projects }) => {
           <img className="dev-img" src={dev} alt="dev png" />
         </Dev>
       </Header>
-      <section>
+      <ProjectsSection style={projectsSpring}>
         <h3>Work :</h3>
         <Projects projects={projects} />
-      </section>
+      </ProjectsSection>
     </Wrapper>
   );
 };

@@ -107,4 +107,8 @@ const AboutMe = styled(animated.p)`
   }
 `;
 
-export { Header, Wrapper, Hello, AboutMe, Dev };
+const ProjectsSection = styled(animated.div)`
+  position: relative;
+`;
+
+export { Header, Wrapper, Hello, AboutMe, Dev, ProjectsSection };

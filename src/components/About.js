@@ -8,8 +8,9 @@ const About = () => {
     config: config.gentle,
     opacity: 1,
     from: { opacity: 0 },
-    delay: 200
+    delay: 200,
   });
+
   return (
     <AboutWrapper style={aboutSpring}>
       <h3>About Me</h3>
