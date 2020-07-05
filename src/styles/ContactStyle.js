@@ -89,7 +89,7 @@ const FormWrapper = styled.div`
         border-radius: 2px;
         outline: none;
         background: #fff;
-        font-family: "Raleway", sans-serif;
+        font-family: "Open Sans", sans-serif;
         box-shadow: 0 2px 4px rgba(134, 141, 155, 0.2);
         ${transition(0.2)}
       }
