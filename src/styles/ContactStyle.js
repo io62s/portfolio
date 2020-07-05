@@ -6,7 +6,6 @@ import { flex, transition } from "./common";
 const ContactContainer = styled(animated.div)`
   position: relative;
   width: 100%;
-  min-height: 65vh;
   padding: 4rem 0 8rem;
   ${flex("column", "center")}
   h3 {
@@ -20,7 +19,7 @@ const ContactContainer = styled(animated.div)`
     position: absolute;
     ${flex("row", "flex-end")}
     right: 0;
-    bottom: -7.2rem;
+    bottom: -7.5rem;
     z-index: 0;
     img {
       max-width: 100%;

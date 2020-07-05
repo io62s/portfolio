@@ -6,7 +6,6 @@ import { transition } from "./common";
 const AboutWrapper = styled(animated.div)`
   width: 100%;
   padding: 4rem 2rem 6rem;
-  min-height: 65vh;
 
   h3 {
     text-align: center;
