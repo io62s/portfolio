@@ -12,7 +12,7 @@ const AboutProject = styled.div`
   -webkit-box-pack: space-evenly;
   -ms-flex-pack: space-evenly;
   justify-content: space-evenly;
-  margin: 5rem auto 1rem;
+  margin: 2rem auto 1rem;
   color: ${black};
 
   @media screen and (max-width: 500px) {
