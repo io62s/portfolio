@@ -5,7 +5,7 @@ import { transition } from "./common";
 
 const AboutWrapper = styled(animated.div)`
   width: 100%;
-  padding: 4rem 2rem 6rem;
+  padding: 2rem 2rem 6rem;
 
   h3 {
     text-align: center;
