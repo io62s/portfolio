@@ -58,7 +58,7 @@ const Home = ({ projects }) => {
             <br /> based in Belgrade, Serbia.
           </AboutMe>
           <Link to="/contact">
-            <Button primary style={btnSpring}>
+            <Button primary="true" style={btnSpring}>
               <h5 className="btn-text">contact me</h5>
             </Button>
           </Link>
