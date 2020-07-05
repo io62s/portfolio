@@ -77,6 +77,13 @@ const Burger = styled.div`
 
 const Nav = styled.div`
   ${flex("row", "flex-end")}
+  padding: .5rem 1.3rem;
+  -webkit-box-shadow: 0 2px 6px rgba(134, 141, 155, 0.25),
+    0 10px 20px rgba(134, 141, 155, 0.2);
+  box-shadow: 0 2px 6px rgba(134, 141, 155, 0.25),
+    0 10px 20px rgba(134, 141, 155, 0.2);
+  background-color: white;
+  border-radius: 3px;
 
   .nav-links {
     width: 0;
@@ -88,7 +95,7 @@ const Nav = styled.div`
   }
   .nav-links.open {
     width: 30rem;
-    padding-right: 2rem;
+    padding: 0 2rem;
     opacity: 1;
   }
   .nav-links .menu-links {
@@ -96,9 +103,9 @@ const Nav = styled.div`
     ${flex("row", "center")}
     height: 100%;
     padding: 1rem 0;
-    font-size: 1.6rem;
-    font-weight: 700;
-    text-transform: uppercase;
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-transform: capitalize;
     text-decoration: none;
     color: ${black};
     cursor: pointer;
@@ -111,7 +118,7 @@ const Nav = styled.div`
     color: ${mainColor};
   }
 
-  .nav-links .menu-links::after {
+  /* .nav-links .menu-links::after {
     content: "";
     display: block;
     position: absolute;
@@ -124,15 +131,14 @@ const Nav = styled.div`
   }
   .nav-links .menu-links:hover::after {
     width: 100%;
-  }
-
+  } */
   @media screen and (max-width: 500px) {
     .nav-links {
       margin-right: 0rem;
     }
     .nav-links.open {
       width: 20rem;
-      padding-right: 1rem;
+      padding: 0 1rem 0 0;
     }
     .nav-links .menu-links {
       font-size: 1.2rem;
