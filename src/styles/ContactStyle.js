@@ -84,13 +84,13 @@ const FormWrapper = styled.div`
         font-size: 1.8rem;
         width: 100%;
         height: 5rem;
-        color: ${black};
+        color: ${mainColor};
         border: 2px solid white;
-        border-radius: 2px;
+        border-radius: 5px;
         outline: none;
         background: #fff;
         font-family: "Open Sans", sans-serif;
-        box-shadow: 0 2px 4px rgba(134, 141, 155, 0.2);
+        box-shadow: 0 2px 6px rgba(134, 141, 155, 0.2);
         ${transition(0.2)}
       }
 

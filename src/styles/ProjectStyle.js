@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { mainColor } from "./Colors";
+import { mainColor, black } from "./Colors";
 import { transition, flex } from "./common";
 
 const ProjectContainter = styled.div`
@@ -10,7 +10,7 @@ const ProjectContainter = styled.div`
     0 10px 20px rgba(134, 141, 155, 0.2);
   box-shadow: 0 2px 6px rgba(134, 141, 155, 0.25),
     0 10px 20px rgba(134, 141, 155, 0.2);
-  border-radius: 3px;
+  border-radius: 5px;
   overflow: hidden;
   ${transition(0.3)}
 
@@ -36,7 +36,7 @@ const ProjectContainter = styled.div`
 
     h3 {
       font-weight: 700;
-      color: ${mainColor};
+      color: ${black};
       font-size: 2rem;
       text-transform: uppercase;
     }

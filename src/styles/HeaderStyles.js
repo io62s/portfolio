@@ -9,12 +9,12 @@ const NavHeader = styled.header`
   margin-bottom: 4rem;
 
   .logo {
-    width: 4.4rem;
-    fill: ${mainColor};
+    width: 4.6rem;
+    fill: ${black};
     ${transition(0.2)}
 
     &:hover {
-      fill: ${black};
+      fill: ${mainColor};
     }
     @media screen and (max-width: 400px) {
       width: 3.2rem;
@@ -83,7 +83,7 @@ const Nav = styled.div`
   box-shadow: 0 2px 6px rgba(134, 141, 155, 0.25),
     0 10px 20px rgba(134, 141, 155, 0.2);
   background-color: white;
-  border-radius: 3px;
+  border-radius: 5px;
 
   .nav-links {
     width: 0;

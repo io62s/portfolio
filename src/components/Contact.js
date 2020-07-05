@@ -95,7 +95,7 @@ class Contact extends Component {
                   </div>
                 </label>
 
-                <Button type="submit">
+                <Button primary type="submit">
                   <h5 className="btn-text">Send</h5>
                 </Button>
               </form>

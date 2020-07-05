@@ -146,6 +146,7 @@ const OtherProjectsContainer = styled.div`
       transform-style: preserve-3d;
       -ms-grid-column-align: center;
       justify-self: center;
+      border-radius: 5px;
     }
 
     .card {
@@ -161,6 +162,7 @@ const OtherProjectsContainer = styled.div`
         0 10px 20px rgba(134, 141, 155, 0.2);
       box-shadow: 0 2px 6px rgba(134, 141, 155, 0.25),
         0 10px 20px rgba(134, 141, 155, 0.2);
+      border-radius: 5px;
       ${transition(0.6)}
     }
 
@@ -168,12 +170,14 @@ const OtherProjectsContainer = styled.div`
       position: relative;
       overflow: hidden;
       padding: 1rem;
+      border-radius: 5px;
     }
 
     .card-back {
       text-align: center;
       font-size: 3rem;
       position: absolute;
+      border-radius: 5px;
 
       -webkit-transform: rotateY(180deg);
       transform: rotateY(180deg);
@@ -187,6 +191,7 @@ const OtherProjectsContainer = styled.div`
         text-decoration: none;
         border: 2px solid #fff;
         color: ${black};
+        border-radius: 5px;
         ${transition(0.3)}
 
         &:hover {

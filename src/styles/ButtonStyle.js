@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { animated } from "react-spring";
-import { mainColor } from "./Colors";
+import { mainColor, btnShadow } from "./Colors";
 import { transition } from "./common";
 
 const ButtonStyle = styled(animated.button)`
@@ -11,7 +11,10 @@ const ButtonStyle = styled(animated.button)`
   background-color: transparent;
   outline: none;
   border: 1px solid ${mainColor};
-  border-radius: 2px;
+  border-radius: 5px;
+  box-shadow: ${(props) =>
+    props.primary ? `0 4px 14px 0 ${btnShadow}50` : "none"};
+
   font-size: 1.8rem;
   overflow: hidden;
   cursor: pointer;
@@ -52,6 +55,9 @@ const ButtonStyle = styled(animated.button)`
   &:focus::after,
   &:active::after {
     height: ${(props) => (props.secondary ? "100%" : "0%")};
+  }
+  &:hover {
+    box-shadow: none;
   }
 
   /****************************************** */
