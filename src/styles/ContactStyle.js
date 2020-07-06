@@ -19,7 +19,7 @@ const ContactContainer = styled(animated.div)`
     position: absolute;
     ${flex("row", "flex-end")}
     right: 0;
-    bottom: -7.5rem;
+    bottom: -8rem;
     z-index: 0;
     img {
       max-width: 100%;
