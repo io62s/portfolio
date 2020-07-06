@@ -6,10 +6,10 @@ const ProjectContainter = styled.div`
   padding: 1.2rem;
   background: white;
   position: relative;
-  -webkit-box-shadow: 0 2px 6px rgba(134, 141, 155, 0.25),
-    0 10px 20px rgba(134, 141, 155, 0.2);
-  box-shadow: 0 2px 6px rgba(134, 141, 155, 0.25),
-    0 10px 20px rgba(134, 141, 155, 0.2);
+  -webkit-box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
   border-radius: 5px;
   overflow: hidden;
   ${transition(0.3)}
