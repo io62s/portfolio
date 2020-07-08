@@ -111,13 +111,13 @@ export default [
     name: "nbg",
     title: "NBG",
     imgUrl: nbgUrl,
-    code: "",
+    code: "https://github.com/io62s/nbg-demo",
     projectDetails: {
       aboutClient:
         "NBG is an Serbian punk rock band from Belgrade,  formed in 1984.",
       aboutProject:
         "NBG, a popular punk rock band offered me the opportunity to design their personal website for professional advantages. The design was completed by utilizing Photoshop and Figma. Web technologies used: Html, Css and JavaScript.",
-      clientUrl: "#",
+      clientUrl: "https://nbgpunk.netlify.app/",
       iMac: nbgImac,
       big: nbgBig,
       group: nbgGroup,
